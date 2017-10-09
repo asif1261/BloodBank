@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.bloodbank">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iicon_blood_bank"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".ProfileActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".BloodGroupRules" />
+        <activity android:name=".AddDonor" />
+        <activity
+            android:name=".DonorList"
+            android:label="@string/actionBar3"
+            android:theme="@style/AppSearch"/>
+        <activity
+            android:name=".OrganizationList"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".BloodBankList"
+            android:label="@string/actionBar2"
+            android:theme="@style/AppSearch" />
+        <activity android:name=".Welcome_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Organization_ex"
+            android:label="@string/actionBar1"
+            android:theme="@style/AppSearch"/>
+        <activity android:name=".Calender" />
+        <activity android:name=".About"></activity>
+    </application>
+
+</manifest>

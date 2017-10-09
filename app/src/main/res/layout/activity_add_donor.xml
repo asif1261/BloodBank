@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/splash_bg"
+        android:fillViewport="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewDonorDetails"
+        android:text="@string/register"
+        android:textAlignment="center"
+        android:textColor="#EEEEEE"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:background="@color/button_light_green"
+        android:textSize="19sp"
+        android:layout_weight="0.24"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textViewDonorDetails">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:weightSum="1">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/name_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            >
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Name"
+                android:drawableLeft="@drawable/name"
+                android:drawablePadding="15dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:inputType="text"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/spinnerBloodGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:hint="Blood Group"
+            android:drawableLeft="@drawable/bloodgroup"
+            android:drawablePadding="15dp"
+            android:textColorHint="#FF0000"
+            android:textColor="#FF0000"
+            android:textColorHighlight="#FF0000"
+            android:theme="@style/AppTheme"
+            app:met_floatingLabel="highlight" />
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/spinnerSex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:drawableLeft="@drawable/gender"
+            android:drawablePadding="15dp"
+            android:hint="Gender"
+            android:textColorHint="#FF0000"
+            android:textColor="#FF0000"
+            android:textColorHighlight="#FF0000"
+            android:theme="@style/AppTheme"
+            app:met_floatingLabel="highlight" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/age_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp">
+
+            <EditText
+                android:id="@+id/editTextAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Age"
+                android:drawableLeft="@drawable/age"
+                android:drawablePadding="15dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="4dp"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/adderss_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp">
+
+            <EditText
+                android:id="@+id/editTextAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:drawableLeft="@drawable/address"
+                android:drawablePadding="15dp"
+                android:hint="Address"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:inputType="text"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/contact_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp">
+
+            <EditText
+                android:id="@+id/editTextContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:drawableLeft="@drawable/contact"
+                android:drawablePadding="15dp"
+                android:hint="Contact Number"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:text="Add Donor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnAddDonor"
+            android:background="@drawable/button_bg"/>
+
+        <Button
+            android:text="Update Donor Info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnUpdateDonor"
+            android:background="@drawable/button_bg"/>
+
+
+    </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

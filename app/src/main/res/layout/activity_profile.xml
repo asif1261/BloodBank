@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="16dp"
+    android:background="@drawable/splash_bg"
+    tools:context="com.example.user.bloodbank.ProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignLeft="@+id/linearLayout3"
+        android:layout_alignStart="@+id/linearLayout3"
+        android:layout_alignRight="@+id/linearLayout6"
+        android:layout_alignEnd="@+id/linearLayout6"
+        android:id="@+id/linearLayoutBnk">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bloodbankk"
+            android:id="@+id/imageViewBloodBank" />
+
+        <TextView
+            android:text="@string/bloodBankList"
+            android:textAlignment="center"
+            android:textColor="#009900"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView12"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignTop="@+id/linearLayout7"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:layout_alignStart="@+id/linearLayout2"
+        android:id="@+id/linearLayoutOrg">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/organization"
+            android:id="@+id/imageViewOrganization" />
+
+        <TextView
+            android:text="@string/organizationList"
+            android:textAlignment="center"
+            android:textColor="#009900"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/linearLayoutBnk"
+        android:layout_alignLeft="@+id/linearLayoutBnk"
+        android:layout_alignStart="@+id/linearLayoutBnk"
+        android:id="@+id/linearLayoutRules">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bloodrules"
+            android:id="@+id/imageViewBloodRules" />
+
+        <TextView
+            android:text="@string/bloodRulesChart"
+            android:textAlignment="center"
+            android:textColor="#009900"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView13"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:layout_alignTop="@+id/linearLayoutRules"
+        android:layout_alignLeft="@+id/linearLayoutOrg"
+        android:layout_alignStart="@+id/linearLayoutOrg"
+        android:id="@+id/linearLayoutH">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/blooddonatecal"
+            android:id="@+id/imageViewCalculator" />
+
+        <TextView
+            android:text="@string/donationCalculator"
+            android:textAlignment="center"
+            android:textColor="#009900"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView14"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:baselineAligned="false"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:textAlignment="center"
+            android:textColor="#009900"
+            android:textSize="16sp"
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/textViewEmail" />
+
+        <Button
+            android:text="Log Out"
+            android:textSize="19sp"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/buttonLogout"
+            android:background="@drawable/button_bg" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/aboutUs"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:drawableRight="@drawable/info1"
+        android:textColor="#009900"
+        android:id="@+id/textViewAboutUs"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/linearLayoutRules"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:id="@+id/linearLayout2"
+        android:weightSum="1"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/donorr"
+                android:id="@+id/imageViewAddDonor" />
+
+        <TextView
+        android:text="@string/addasdonor"
+        android:textAlignment="center"
+        android:textColor="#009900"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:textSize="15sp"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:weightSum="1"
+        android:id="@+id/linearLayout3"
+        android:layout_above="@+id/linearLayoutBnk"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="26dp"
+        android:layout_marginEnd="26dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            app:srcCompat="@drawable/donorlist"
+            android:id="@+id/imageViewSeeDonorList"
+            android:layout_weight="0.10" />
+
+        <TextView
+            android:text="@string/seedonorlist"
+            android:textAlignment="center"
+            android:textColor="#009900"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+</RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

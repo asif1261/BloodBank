@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="query_suggestions">
+        <item>Dhaka</item>
+        <item>Khulna</item>
+        <item>Sylhet</item>
+        <item>Rajshahi</item>
+        <item>Barisal</item>
+    </string-array>
+</resources>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">BloodBankBd</string>
+    <string name="register"><c><b>Enter your details here as a Donor</b></c></string>
+    <string name="banner"><c><b>Blood Bank Bangladesh</b></c></string>
+    <string name="banner2"><c><b>Give Blood and Find Blood Here</b></c></string>
+    <string name="ruleBanner"><c><b>Blood Types Rules Chart</b></c></string>
+    <string name="welcomeBannerPart1"><c><b>BLOOD BANK BANGLADESH</b></c></string>
+    <string name="welcomeBannerPart3"><c><b>GIVE BLOOD</b></c></string>
+    <string name="welcomeBannerPart4"><c><b>SAVE LIFE</b></c></string>
+    <string name="welcomeBannerPart5"><c><b>WELCOME</b></c></string>
+    <string name="welcomeBannerPart6"><c><b>Give blood and find blood here</b></c></string>
+    <string name="actionBar1"><c><b>Organization List</b></c></string>
+    <string name="actionBar2"><c><b>Blood Bank List</b></c></string>
+    <string name="actionBar3"><c><b>Blood Donors List</b></c></string>
+    <string name="hintSearchMess"><c><b>Search By Your City</b></c></string>
+    <string name="calculateBanner"><c><b>CALCULATE YOUR NEXT DONATION DATE</b></c></string>
+    <string name="enterYourLast"><c><b>Enter Your Last Donated Date</b></c></string>
+    <string name="buttonSubmit"><c><b>SUBMIT</b></c></string>
+    <string name="LastDonationDate"><c><b>LAST DONATION DATE</b></c></string>
+    <string name="LastDonationDateResult"><c><b>dd/mm/yyyy</b></c></string>
+    <string name="nowYouCanDonate"><c><b>NOW YOU CAN DONATE ON</b></c></string>
+    <string name="nowYouCanDonateResult"><c><b>dd/mm/yyyy</b></c></string>
+    <string name="GiveBloodSaveLife"><c><b>Give Blood Save Life</b></c></string>
+    <string name="userLogIn"><c><b>User LogIn</b></c></string>
+    <string name="userSignUp"><c><b>User Registration</b></c></string>
+    <string name="email"><c>Enter Your Email</c></string>
+    <string name="password"><c>Enter Your Password</c></string>
+    <string name="aboutUs"><c><b>About Us</b></c></string>
+    <string name="sendUsEmail"><c><b>Send Us Email</b></c></string>
+    <string name="addasdonor"><c><b>Add as Donor</b></c></string>
+    <string name="seedonorlist"><c><b>See Donor List</b></c></string>
+    <string name="organizationList"><c><b>Organization List</b></c></string>
+    <string name="bloodBankList"><c><b>Blood BankList</b></c></string>
+    <string name="donationCalculator"><c><b>Donation Calculator</b></c></string>
+    <string name="bloodRulesChart"><c><b>Blood Rules Chart</b></c></string>
+    <string name="notHaveAnAccount"><c><b>Not have an account! SignUp Here</b></c></string>
+    <string name="alreadyRegister"><c><b>Already Register? SignIn here</b></c></string>
+
+
+</resources>

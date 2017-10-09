@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="3dp"
+    android:orientation="horizontal"
+    app:cardBackgroundColor="#ECEFF1"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="3dp"
+    android:layout_marginTop="0dip"
+    android:layout_marginBottom="0dip"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="13dp">
+
+
+        <ImageView
+            android:id="@+id/list_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/oorrgg" />
+
+        <TextView
+            android:id="@+id/list_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/list_desc"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/list_desc"
+            android:text="Name"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="#4CAF50"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/list_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_title"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/list_avatar"
+            android:ellipsize="end"
+            android:text="Address"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="#4CAF50"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/list_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_desc"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/list_avatar"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="City"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="#4CAF50"
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/list_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_city"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/list_avatar"
+            android:ellipsize="end"
+            android:text="Mobile no:"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="#4CAF50"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
